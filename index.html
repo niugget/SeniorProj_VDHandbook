@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>The Visual Design Handbook</title>
+		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+ 		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/waypoints-sticky.min.js"></script>
+		<script src="js/myJavaScript.js"></script>
+	</head>
+	<body>
+		<div id="home">
+			<!--This header is for the about and contact info that will be added later-->
+		<div id="header">
+			<ul class="hBar">
+				<li class="hBar">
+					<!--<a href="#">About</a>-->
+				</li>
+				<li class="hBar">
+					<!--<a href="#">Contact</a>-->
+				</li>
+			</ul>
+		</div>
+		<h1>
+			THE VISUAL <span>design</span> HANDBOOK
+		</h1>
+		<div class="splash">
+		<ul id="subjects">
+			<li class="subCat"><a href="#subject1">
+			<i class="fa fa-font fa-4x fa-inverse"></i><br>Typography
+		</a></li>
+		<li class="subCat"><a href="#subject2">
+			<i class="fa fa-paint-brush fa-4x fa-inverse"></i><br>Color Theory
+		</a></li>
+		<li class="subCat"><a href="#subject3">
+			<i class="fa fa-cube fa-4x fa-inverse"></i><br>Space
+		</a></li>
+		<br>
+		<li class="subCat"><a href="#subject4">
+			<i class="fa fa-cubes fa-4x fa-inverse"></i><br>Heiarchy
+		</a></li>
+		<li class="subCat"><a href="#subject5">
+			<i class="fa fa-th fa-4x fa-inverse"></i><br>Grid
+		</a></li>
+		 <li class="subCat"><a href="#subject6">
+			<i class="fa fa-globe fa-4x fa-inverse"></i><br>Resources
+		</a></li> 
+		</ul>
+	</div>
+</div>
+	<!--The header bar that will stay on top when scrolling past home-->
+	<div class="sticky-navigation">
+				<ul>
+					<li id="logo"><a href="#home"> THE VISUAL <span>design</span> HANDBOOK</a></li>
+			</ul>
+		</div>
+		<div id="subject1">
+			<h1 class="subHeader">
+				TYPOGRAPHY
+			</h1>
+			<div class="typ">
+				<span style="font-size:60px; font-family:Rye">T</span>ypography is the art and technique of arranging type.
+			</div>
+			<div class="typPara">
+				Typography is important because it conveys emotion. The choice of typeface can affect how a piece is understood. Typefaces can illicit all kinds of different feelings. From the serious Serifs to the minimal San Serifs, there's an appropriate type for every occasion.
+				
+			</div>
+			<div class="typPara">
+				<span style="font-weight:700">How should you chose a typeface?</span>
+				<br>
+				Start by asking yourself a few questions. What is the purpose of this typeface? What kind of audience am I trying to reach? 
+				<br>
+				In general you should limit the typefaces of your product to as few as possible. Titles and headers can be more decorative but text that is meant to be read and consumed should be easy to track, serving as a utility function.
+				<br> <br>
+				Why don't you do some experimentation with type yourself? Click on different buttons in the box to the right to change the fonts of the paragraph!
+			</div>
+			<div id="txtChange">
+				<p>
+					Boggis, Bunce, and Bean one fat, one short, one lean. 
+					<br>
+					Those horrible crooks so different in looks are
+					<br>
+					nonetheless equally mean.
+				</p>
+				
+			</div>
+			<div id="preferences">
+				<form>
+					<fieldset>
+						<legend><span style="font-family:Libre Baskerville">Typefaces</span></legend>
+						<input type="radio" id="serif"
+						class="typefaces" name="typefaces"
+						checked />
+						<label for="serif">serif</label>
+
+						<input type="radio" id="sans-serif"
+						class="typefaces" name="typefaces" />
+						<label for="serif">sans-serif</label>
+
+						<input type="radio" id="decorative"
+						class="typefaces" name="typefaces" />
+						<label for="serif">decorative</label>
+
+						<input type="radio" id="no"
+						class="typefaces" name="typefaces" />
+						<label for="serif">NO</label>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>	
+
+		<div id="subject2">
+			<h1 class="subHeader">
+				COLOR THEORY
+			</h1>
+			<div id="colorHead">
+				<span style="color:#A9121F;font-weight:700;font-size:30px">C</span><span style="color:#F07505;font-weight:700;font-size:30px">o</span><span style="color:#D9C300;font-weight:700;font-size:30px">l</span><span style="color:#2ABF6B;font-weight:700;font-size:30px">o</span><span style="color:#2257CF;font-weight:700;font-size:30px">r</span> theory is a body of practical guidance to color mixing and the visual effects of specific color combinations.
+			</div>
+			<div id="colorPara">
+				<p>
+					Color when used right can be your greatest design tool. The right color scheme is vital to creating the mood and feeling associated with a product.
+					Here's a quick look at how a color wheel is divided up. 
+
+				</p>
+			</div>
+			<div id="colorWheelImg">
+				<img src='img/colorwheel.jpg'></img>
+			</div>
+			<div id="colorRight">
+				<p>
+					Color harmony can be achieved through understanding color wheel themes.
+
+				<br><br>
+				<span style="font-weight:700">Analogous</span> color schemes create a sense of harmony and congruity. It is often found in nature.
+				<br><br>
+				<span style="font-weight:700">Secondary</span> color schemes are evenly spaced around the color wheel. One color should be used as a base with the others as accents.
+				<br><br>
+				<span style="font-weight:700">Complimentary</span> color schemes are colors that are opposite on the color wheel. It creates a vibrant look especially at full saturation but can be very bad for text. 
+				</p>
+			</div>
+		</div>
+
+		<div id="subject3">
+			<h1 class="subHeader">
+				SPACE
+			</h1>
+
+			<div id="spacePara">
+				Space or lack thereof can be used to make a point.
+			</div>
+
+			<div id="spaceParaBottom">
+				<p>
+					Space in Visual arts often referrs to white space or nagative space. It is an important element of design which enables the objects in it to exist. The balance between positive (or non-white) and the use of negative spaces is key to aesthetic composition.
+					<br><br>
+					A page crammed full of text or graphics with very little white space runs the risk of appearing busy or cluttered, and is typically difficult to read. On the other hand judicious use of negative space can give a page a classic, elegant, or rich appearance. 
+					<br> <br>
+					Here are a couple examples of good and bad use of space.
+				</p>
+			</div>
+
+			<div id="goodImg">
+				<img src='img/mjlogo.jpg'></img>
+
+			</div>
+
+			<div id="badImg">
+				<img src='img/badlogo.jpg'></img>
+			</div>
+
+		</div>
+
+		<div id="subject4">
+			<h1 class="subHeader">
+				HEIARCHY
+			</h1>
+
+			<div id="heiarchyPara">
+				<p>
+					Good visual hierarchy isn't about wild and crazy graphics or the newest photoshop filters, it's about organizing information in a way that's usable, accessible, and logical to the everyday site visitor.
+					<br><br>
+					Here are a few tools used to create hierachy.
+				</p>
+			</div>
+			<!--This is the interactive card flipping aspect of the Heiarchy subject -->
+			<div class="wrapper">
+      			<div class="col_third">
+        			<div class="hover panel">
+         				 <div class="front">
+            				<div class="box1">
+             					 <p>Size</p>
+            				</div>
+          				</div>
+         		 <div class="back">
+            		<div class="box2">
+              			<p>Objects that are bigger demand more attention. Using size as a hierarchal tool is an effective way of guiding a viewer's eye to a particular portion of the page.
+              				<br><br>
+              				It's important to correlate size with importance in a design.
+              			</p>
+            		</div>
+          		</div>
+        	</div>
+		</div>
+				<div class="col_third">
+        <div class="hover panel">
+          <div class="front">
+            <div class="box3">
+              <p>Contrast</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="box4">
+              <p>Contrast shows relative important. Dramatic shifts in text-size or color will impart a message that something is different and requires attention. <br><br> Changing from a light background color to a dark background color can quickly separate the core content of a page from the footer.</p>
+            </div>
+          </div>
+        </div>
+		</div>
+
+		<div class="col_third end">
+        <div class="hover panel">
+          <div class="front">
+            <div class="box5">
+              <p>Alignment</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="box6">
+              <p>Alignment creates order between elements.<br><br>
+              	Users will generally look for information in sidebars and headers. This is a popular format in social media sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+	 </div>
+
+		</div>
+
+		<div id="subject5">
+			<h1 class="subHeader">
+				GRID
+			</h1>
+			<div id="gridPara">
+				<p>
+					Grid based design theory is used extensively in web design. It is a good way to control the propotions of a page. Here are a couple commonly used grid themes and ratios.
+					<br><br>
+					<div id="gridLeft">
+					<span style="font-weight:700"> The Golden Ratio</span>
+					<br>
+					The rule of thirds is a simplified version of the golden ratio.
+					
+				</p>
+
+				<div id="goldenImg">
+				<img src='img/goldenRatio.jpg'></img>
+
+			</div>
+		</div>
+		<div id="gridRight">
+			<span style="font-weight:700"> The 960 Grid System</span>
+			<br>
+			Developed by Nathan Smith, it is mainly a CSS framework. 960 is divisible by many numbers so it is perfect for grids. 
+			<div id="nineImg">
+				<img src='img/960grid.jpg'></img>
+
+			</div>
+		</div>
+			</div>
+		</div>
+
+		<div id="subject6">
+			<h1 class="subHeader">
+				RESOURCES
+			</h1>
+			<div id="rePara">
+				Check out some awesome websites for inspiration!
+			</div>
+			
+				<div id="resource1">
+					<a href="https://www.behance.net/" class="inset">Behance</a>
+				</div>
+				<div id="resource2">
+					<a href="https://dribbble.com/" class="inset">Dribbble</a>
+				</div>
+				<div id="resource3">
+					<a href="http://codepen.io/" class="inset">CodePen</a>
+				</div>
+
+				<div id="rePara">
+					Happy designing!
+				</div>
+			
+		</div>
+
+	</body>
+	</html>

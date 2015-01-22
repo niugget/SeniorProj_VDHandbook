@@ -1,0 +1,615 @@
+/*
+CSS for The Visual Design Handbook
+Angela Niu's Senior Project 2014
+*/
+
+
+body{
+margin:0;
+padding:0;
+width:100%;
+
+}
+
+#home{
+	background: url('../img/backgroundHome.png') no-repeat;
+	overflow:scroll;
+	height:100%;
+}
+
+#header{
+	width:100%;
+}
+
+.hBar{
+	list-style-type: none;
+	display: block;
+	font-family: Lato;
+	float: right;
+	font-weight: 300;
+	font-size: 1.25em;
+	text-align: right;
+	color:white;
+	padding-right: 30px;
+
+}
+
+.hBar a{
+	text-decoration: none;
+	color:white;
+}
+
+.hBar a:hover{color:#00A99D;}
+
+#header:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+/*Large title on home page*/
+h1{
+	color:white;
+	font-family: Lato;
+	font-weight:300;
+	text-align: center;
+	font-size: 4em;
+	letter-spacing: 5px;
+	padding:10px;
+	margin:auto;
+
+}
+
+h1 span{
+	font-family:Pacifico;
+	color:#00A99D;
+}
+
+/*The 6 subjects or chapters of the home page*/
+#subjects{
+list-style-type: none;
+color:white;
+display: table;
+font-family: Lato;
+font-size: 1.5em;
+font-weight: 300;
+margin-left: auto;
+margin-right: auto;
+margin-top:0;
+text-align: center;
+}
+
+.subCat{
+	display:inline-block;
+	padding:60px;
+	text-align: center;
+	margin:auto;
+	float:left;
+}
+
+.subCat a{
+	text-decoration: none;
+	color: white;
+}
+
+.subCat a:hover{color:#00A99D;}
+
+.splash ul li:hover{color:#00A99D;}
+.fa-paint-brush:hover{color:#00A99D;}
+.fa-font:hover{color:#00A99D;}
+.fa-cube:hover{color:#00A99D;}
+.fa-cubes:hover{color:#00A99D;}
+.fa-th:hover{color:#00A99D;}
+.fa-globe:hover{color:#00A99D;}
+
+/*Navigation bar that stays on top after scrolling through home page*/
+.sticky-navigation{
+	width:100%;
+	background-color:#00A99D;
+	color:#00A99D;
+	height:70px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+
+.sticky-navigation.stuck{
+	position:fixed;
+	top:0;
+}
+
+#logo a{ color:white; font-family: Lato; font-weight: 300; text-decoration: none; margin-top: 15px; font-size: 1.5em}
+
+#logo a span{font-family:Pacifico;}
+
+/*This is the beginnign of the Typography section*/
+#subject1{
+	background-color: #fff;
+	color: #333333;
+	height:100%;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+.subHeader{
+	font-family: Lato;
+	font-weight:400;
+	color:#00A99D;
+	font-size:3.75em;
+	text-align: left;
+	padding-left: 60px;
+}
+
+.typ{
+	font-family: Libre Baskerville, serif;
+	text-align: left;
+	font-size: 1.5em;
+	padding: 15px 100px;
+}
+
+.typPara{
+	font-family: Libre Baskerville, serif;
+	font-weight: 400;
+	width:50%;
+	float:left;
+	text-align:left;
+	padding: 10px 10px 10px 120px;
+	font-size: 1.25em;
+}
+
+/*This starts the interactive part of the Typography section*/
+/*Click on different font preferences to change the paragraph*/
+#typeface{
+	font-family: Libre Baskerville, serif;
+	text-align:left;
+	padding: 30px 10px 10px 120px;
+	font-size: 1.25em;
+}
+
+#txtChange{
+	margin-left: 900px;
+	width:450px;
+	height:300px;
+	background-color:#00A99D;
+}
+
+#txtChange p{
+	color:white;
+	text-align: center;
+	font-size: 1.875em;
+	padding-top: 30px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#preferences{
+	margin-left: 900px;
+	width:450px;
+	padding-top: 10px;
+	font-family: Lato;
+	
+}
+
+#prefences fieldset button{ 
+	background-color:white;
+	display: inline;
+	font-family: Lato;
+	font-size: 1em;
+	text-align: center;
+	
+	width: 100%;
+	padding:.75em;
+	border: 1px solid #00A99D;
+	
+}
+
+#preferences fieldset input[type=radio] + label {
+	display: inline;
+	font-size: 1em;
+	text-align: center;
+	
+	width: 100%;
+	padding: 3px 20px 3px 3px;
+	border: 1px solid #00A99D;
+	color:#00A99D;
+	margin: 0;
+}
+
+#preferences fieldset input[type=radio] + label:hover {
+	background-color: #00A99D;
+	color: white;
+}
+
+#preferences fieldset input[type=radio]:checked + label{
+	background-color: #00A99D;
+	color: white;
+}
+
+/*This is the beginning of the Color Theory Section*/
+#subject2{
+	background-color: white;
+	height:100%;
+	width:100%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 30px 0;
+}
+
+#colorHead{
+	font-family: Libre Baskerville, serif;
+	text-align: left;
+	font-size: 1.56em;
+	padding: 30px 100px 5px 120px
+
+}
+
+#colorPara{
+	font-family: Libre Baskerville, serif;
+	font-weight: 400;
+	float:left;
+	text-align:left;
+	padding: 10px 10px 10px 120px;
+	font-size: 1.25em;
+}
+
+#colorWheelImg{
+	width: 600px;
+	height: 300px;
+	padding-left: 120px;
+	padding-top: 40px;
+	float:left;
+}
+
+#colorWheelImg img {
+    max-width:90%;
+    height:auto;
+}
+
+#colorRight{
+	margin-left: 750px;
+	width:600px;
+}
+
+#colorRight p{
+	font-family: Libre Baskerville, serif;
+	font-weight: 400;
+	font-size: 1.25em;
+
+}
+
+/*This begins the Space section*/
+#subject3{
+	background-color: white;
+	height:100%;
+	width:100%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 30px 0;
+}
+
+#spacePara{
+	margin:100px;
+	font-family: Libre Baskerville;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+#spaceParaBottom{
+	font-family: Libre Baskerville, serif;
+	font-weight: 400;
+	float:left;
+	text-align:left;
+	padding: 10px 10px 30px 100px;
+	font-size: 1.25em;
+	margin-right: 100px;
+}
+
+#goodImg{
+	width:300px;
+	height:200px;
+	float:left;
+	margin-left: 200px;
+}
+
+#goodImg img{
+	max-width:100%;
+	height:auto;
+}
+
+#badImg{
+	width:300px;
+	height:200px;
+	margin-left: 700px;
+}
+
+#badImg img{
+	max-width:90%;
+	height:auto;
+}
+
+/*This begins the heiarchy section*/
+#subject4{
+	background-color: white;
+	height:600px;
+	width:100%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 30px 0;
+}
+
+#heiarchyPara{
+	padding: 10px 70px 10px 120px;
+	font-family: Libre Baskerville;
+	font-size: 1.25em;
+	text-align: left;
+}
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+	position: relative;
+	display:inline;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+
+.wrapper{ width: 980px; margin: 0 auto;  padding-top: 40px; hoverflow: hidden;}
+
+.panel {
+	margin: 0 auto;
+	height: 130px;  
+	position: relative;
+	-webkit-perspective: 600px;
+}
+
+.panel .front,
+.panel .back {
+	text-align: center;
+}
+	
+.panel .front {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 900;
+	text-align: center;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.panel .back {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+}
+.panel.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+}
+
+/*The front of the first card*/
+.box1{
+	background-color: #00A99D;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box1 p{
+		font-family: Libre Baskerville;
+		color:white;
+		font-size: 2.5em;
+}
+
+/*Back of first card*/
+.box2{
+	background-color: #ED7A71;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box2 p{
+		font-family: Libre Baskerville;
+		color:white;
+}
+
+/*Front of second card*/
+.box3{
+	background-color: #00A99D;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box3 p{
+		font-family: Libre Baskerville;
+		color:white;
+		font-size: 2.5em;
+}
+
+/*Back of second card*/
+.box4{
+	background-color: #ED7A71;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box4 p{
+		font-family: Libre Baskerville;
+		color:white;
+}
+
+/*Front of third card*/
+.box5{
+	background-color: #00A99D;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box5 p{
+		font-family: Libre Baskerville;
+		color:white;
+		font-size: 2.5em;
+}
+
+/*Back of third card*/
+.box6{
+	background-color: #ED7A71;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box6 p{
+		font-family: Libre Baskerville;
+		color:white;
+}
+
+/*Start of Grid section*/
+#subject5{
+	background-color: white;
+	height:100%;
+	width:100%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 30px 0;
+}
+
+#gridLeft{
+	float:left;
+	width: 500px;
+}
+
+#gridRight{
+	margin-left: 600px;
+}
+
+#gridPara{
+	font-family: Libre Baskerville;
+	font-size: 1.25em;
+	text-align: left;
+	margin:20px 20px 20px 120px;
+	padding-right: 100px;
+
+}
+
+#nineImg{
+	padding-top: 10px;
+
+}
+
+/*Start of Resources section*/
+#subject6{
+	background-color: white;
+	height:100%;
+	width:100%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 30px 0;
+}
+
+#rePara{
+	margin:0 auto;
+	font-family: Libre Baskerville;
+	font-size: 1.25em;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#reWrapper{
+	margin: 100px;
+
+}
+
+#resource1{
+	margin-left: 655px;
+	margin-top: 30px;
+
+
+}
+
+#resource2{
+	margin-left: 655px;
+	margin-top: 10px;
+}
+
+#resource3{
+	margin-left: 655px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.inset{
+	display:block;
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	font-size:1.25em;
+	color:#fff;
+	line-height:100px;
+	text-shadow:0 1px 0 #666;
+	text-align:center;
+	text-decoration:none;
+	box-shadow:2px 2px 4px #000;
+	background:#00A99D;
+	opacity:0.95
+}
+
+.inset:hover{color:#eee;
+	text-shadow:0 0 1px #666;
+	text-decoration:none;
+	box-shadow:0 0 4px #222 inset;
+	opacity:1}
+
+	
